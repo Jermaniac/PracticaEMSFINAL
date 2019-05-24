@@ -1,0 +1,82 @@
+﻿@model AppGestionEMS.Models.Evaluaciones
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Evaluaciones</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Curso.CursoId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Curso.CursoId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Grupo.GrupoId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Grupo.GrupoId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GrupoPractica.GrupoPracticasId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GrupoPractica.GrupoPracticasId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.User.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.User.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ordinariaExtraordinaria)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ordinariaExtraordinaria)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nota)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nota)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.examenPractica)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.examenPractica)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.notaFinal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.notaFinal)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

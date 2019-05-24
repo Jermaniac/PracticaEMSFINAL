@@ -1,0 +1,74 @@
+﻿@model AppGestionEMS.Models.Tutorias
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Tutorias</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Convocatoria.ConvocatoriaId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Convocatoria.ConvocatoriaId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Curso.CursoId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Curso.CursoId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GrupoPractica.GrupoPracticasId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GrupoPractica.GrupoPracticasId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.User.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.User.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdTutoria)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdTutoria)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdAsignatura)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdAsignatura)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fecha)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fecha)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

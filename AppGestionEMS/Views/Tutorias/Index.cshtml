@@ -1,0 +1,69 @@
+﻿@model IEnumerable<AppGestionEMS.Models.Tutorias>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Convocatoria.ConvocatoriaId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Curso.CursoId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GrupoPractica.GrupoPracticasId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.User.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IdTutoria)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IdAsignatura)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fecha)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Convocatoria.ConvocatoriaId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Curso.CursoId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GrupoPractica.GrupoPracticasId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.User.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IdTutoria)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IdAsignatura)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fecha)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { convocatoria = item.ConvocatoriaId, curso = item.CursoId , grupopracticas = item.GrupoPracticasId, user = item.UserId, tutoria = item.IdTutoria, asignatura = item.IdAsignatura, fecha = item.fecha }) |
+            @Html.ActionLink("Details", "Details", new {  convocatoria = item.ConvocatoriaId, curso = item.CursoId , grupopracticas = item.GrupoPracticasId,user = item.UserId,  tutoria = item.IdTutoria, asignatura = item.IdAsignatura, fecha = item.fecha }) |
+            @Html.ActionLink("Delete", "Delete", new {  convocatoria = item.ConvocatoriaId, curso = item.CursoId , grupopracticas = item.GrupoPracticasId, user = item.UserId,  tutoria = item.IdTutoria, asignatura = item.IdAsignatura, fecha = item.fecha })
+        </td>
+    </tr>
+}
+
+</table>

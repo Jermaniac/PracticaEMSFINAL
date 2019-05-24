@@ -1,0 +1,74 @@
+﻿@model IEnumerable<AppGestionEMS.Models.Evaluaciones>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Curso.CursoId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Grupo.GrupoId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GrupoPractica.GrupoPracticasId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.User.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ordinariaExtraordinaria)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nota)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.examenPractica)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.notaFinal)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Curso.CursoId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Grupo.GrupoId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GrupoPractica.GrupoPracticasId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.User.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ordinariaExtraordinaria)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.nota)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.examenPractica)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.notaFinal)
+        </td>
+        <td>
+            @Html.ActionLink("Details", "Details", new { curso = item.CursoId, grupo = item.GrupoId, user = item.UserId, grupopracticas= item.GrupoPractica, ordinariaextraordinario = item.ordinariaExtraordinaria, nota = item.nota, examenpractica = item.examenPractica, notafinal = item.notaFinal }) |
+
+        </td>
+    </tr>
+}
+
+</table>
