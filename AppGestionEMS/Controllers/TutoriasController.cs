@@ -10,6 +10,8 @@ using AppGestionEMS.Models;
 
 namespace AppGestionEMS.Controllers
 {
+    [Authorize(Roles = "profesor,admin")]
+
     public class TutoriasController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();

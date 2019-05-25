@@ -6,6 +6,8 @@ using System.Web.Mvc;
 
 namespace AppGestionEMS.Controllers
 {
+    [Authorize(Roles = "admin")]
+
     public class MenuAdministradorController : Controller
     {
         // GET: MenuAdministrador

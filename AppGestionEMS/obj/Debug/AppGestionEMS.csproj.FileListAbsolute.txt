@@ -125,3 +125,5 @@ C:\Users\stali\Desktop\PRUEBA4\AppGestionEMS\obj\Debug\AppGestionEMS.Migrations.
 C:\Users\stali\Desktop\PRUEBA4\AppGestionEMS\obj\Debug\AppGestionEMS.Migrations.CreateEvaluaciones.resources
 C:\Users\stali\Desktop\PRUEBA4\AppGestionEMS\obj\Debug\AppGestionEMS.Migrations.CreateConvocatorias.resources
 C:\Users\stali\Desktop\PRUEBA4\AppGestionEMS\obj\Debug\AppGestionEMS.Migrations.CreateTutorias.resources
+C:\Users\stali\Desktop\PRUEBA4\AppGestionEMS\obj\Debug\AppGestionEMS.Migrations.CreateExamenes.resources
+C:\Users\stali\Desktop\PRUEBA4\AppGestionEMS\obj\Debug\AppGestionEMS.Migrations.CreatePracticas.resources

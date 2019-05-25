@@ -11,6 +11,8 @@ using Microsoft.AspNet.Identity;
 
 namespace AppGestionEMS.Controllers
 {
+    [Authorize(Roles = "profesor,admin,alumno")]
+
     public class MisEvaluacionesController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
